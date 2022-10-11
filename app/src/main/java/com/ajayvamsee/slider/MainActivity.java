@@ -50,7 +50,7 @@ public class MainActivity extends AppCompatActivity {
         picker.setMinValue(10);
         picker.setWrapSelectorWheel(false);
 
-        aSwitch.setClickable(false);
+        aSwitch.setClickable(true);
 
 
 
