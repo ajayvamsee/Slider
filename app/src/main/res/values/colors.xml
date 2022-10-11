@@ -8,5 +8,8 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="red">#F40000</color>
+    <color name="colorRed">#E53935</color>
+    <color name="spiral_color_on">#038E9B</color>
+    <color name="switch_track">#F3F6F7</color>
 
 </resources>

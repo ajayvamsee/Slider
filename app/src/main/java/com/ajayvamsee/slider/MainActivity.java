@@ -10,11 +10,13 @@ import android.content.res.ColorStateList;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.view.WindowManager;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.NumberPicker;
+import android.widget.Switch;
 import android.widget.TextView;
 
 import com.google.android.material.slider.Slider;
@@ -27,6 +29,7 @@ public class MainActivity extends AppCompatActivity {
     ImageView ivInc,ivDec;
     int val=10;
     Animation animation;
+    Switch aSwitch;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -38,6 +41,7 @@ public class MainActivity extends AppCompatActivity {
         ivInc=findViewById(R.id.ivInc);
         ivDec=findViewById(R.id.ivDec);
         tvTime=findViewById(R.id.tvTime);
+        aSwitch=findViewById(R.id.swSettingClutch);
 
         animation=AnimationUtils.loadAnimation(getApplicationContext(),R.anim.move);
 
@@ -45,6 +49,9 @@ public class MainActivity extends AppCompatActivity {
         picker.setMaxValue(100);
         picker.setMinValue(10);
         picker.setWrapSelectorWheel(false);
+
+        aSwitch.setClickable(false);
+
 
 
         slider.addOnSliderTouchListener(new Slider.OnSliderTouchListener() {
@@ -58,14 +65,25 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onStopTrackingTouch(@NonNull Slider slider) {
                 Log.d("aa", "onStopTrackingTouch "+ ((int)slider.getValue()));
-                tvData.setText("Slider Picker "+((int)slider.getValue()));
+                tvData.setText("Slider Picker "+((int)slider.getValue())+" seconds");
+            }
+        });
+
+        slider.addOnChangeListener(new Slider.OnChangeListener() {
+            @SuppressLint("RestrictedApi")
+            @Override
+            public void onValueChange(@NonNull Slider slider, float value, boolean fromUser) {
+               // tvData.setText("Slider Picker addOnChangeListener"+((int)slider.getValue())+" seconds");
+                tvData.setText((int) value+"valuesss");
+
+                adjustBrightness(slider.getValue());
             }
         });
 
         picker.setOnValueChangedListener(new NumberPicker.OnValueChangeListener() {
             @Override
             public void onValueChange(NumberPicker picker, int oldVal, int newVal) {
-                tvData.setText("Number Picker "+newVal);
+                tvData.setText("Number Picker "+newVal+" seconds");
             }
         });
 
@@ -85,6 +103,14 @@ public class MainActivity extends AppCompatActivity {
                 }
                 tvTime.setText(""+val);
             }
+        });
+    }
+
+    private void adjustBrightness(float brightness) {
+        runOnUiThread(() -> {
+            WindowManager.LayoutParams layout = getWindow().getAttributes();
+            layout.screenBrightness = brightness;
+            getWindow().setAttributes(layout);
         });
     }
 }

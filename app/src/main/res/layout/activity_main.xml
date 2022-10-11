@@ -23,7 +23,9 @@
         app:thumbColor="@color/teal_200"
         app:thumbElevation="10dp"
         app:tickVisible="false"
-        app:trackColor="@color/teal_200" />
+        app:trackColor="@color/teal_200"
+
+        />
 
     <NumberPicker
         android:id="@+id/numPick"
@@ -54,7 +56,6 @@
         android:layout_marginTop="96dp"
         android:layout_marginEnd="8dp"
         android:text="10"
-        android:textColor="@color/black"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.509"
@@ -80,10 +81,26 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="174dp"
         android:text="10"
-        android:textColor="@color/black"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
+
+    <Switch
+        android:id="@+id/swSettingClutch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:checked="true"
+        android:switchMinWidth="250dp"
+        android:thumb="@drawable/clutch_thumb"
+        android:track="@drawable/track_for_testing_screen"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="UseSwitchCompatOrMaterialXml" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
