@@ -11,5 +11,6 @@
     <color name="colorRed">#E53935</color>
     <color name="spiral_color_on">#038E9B</color>
     <color name="switch_track">#F3F6F7</color>
+    <color name="colorAccent">#008D9B</color>
 
 </resources>

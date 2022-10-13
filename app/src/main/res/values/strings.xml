@@ -1,3 +1,302 @@
 <resources>
     <string name="app_name">Slider</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="function1">Fun1</string>
+    <string name="init">Initialization</string>
+    <string name="denit">De-Initialization</string>
+    <string name="reinit">Re-Initialization</string>
+    <string name="config">Configuration</string>
+    <string name="bindService">Bind Service</string>
+    <string name="bindCallback">Bind Callbacks</string>
+    <string name="serFun">Service Function</string>
+    <string name="unbindService">Ub-bind Service &amp; Close</string>
+    <string name="ubbindCallback">Un-Bind Callback</string>
+    <string name="startCapture">Start Capture</string>
+    <string name="stopCapture">Stop Capture</string>
+    <string name="camerePreview">Camera Preview</string>
+    <string name="testFuncation">Function Test</string>
+
+    <string name="url">URL Address</string>
+    <string name="get_camera_details">Get camera Details</string>
+    <string name="camera_details">Camera Details</string>
+    <string name="door_name_filler">Door Name</string>
+    <string name="speech_recognition">Speech Recognition</string>
+    <string name="linear_actuator">Automatic Camera Adjustment</string>
+    <string name="logging">Logging</string>
+    <string name="debug">Debug</string>
+    <string name="spoof">Spoof </string>
+    <string name="face_pose">Face Pose</string>
+    <string name="submit">Submit</string>
+    <string name="update">Update\n</string>
+    <string name="hint_password">Password</string>
+    <string name="select_lock">Select Lock</string>
+    <string name="re_calibration">Re-calibration</string>
+    <string name="setup_deadbolt_lock">Setup Deadbolt Lock</string>
+    <string name="setup_ado">DOORBOT SETTINGS</string>
+    <string name="health_check_interval_time_in_sec">Health Check Interval Time in Sec</string>
+
+
+    <string name="door_icon">Door Icon</string>
+    <string name="location_icon">Location Icon</string>
+    <string name="change_wifi">Change WIFI</string>
+
+    <string name="Scan">Scan Wifi</string>
+    <string name="getCamera">Get Cam</string>
+    <string name="getCamControl">Camera Control</string>
+    <string name="tiltUp">UP</string>
+    <string name="tiltDown">Down</string>
+    <string name="getPosition">Current Position</string>
+    <string name="allPostion">All Positions</string>
+
+    <string name="splash_screen_faceopen">Splash Screen FaceOpen</string>
+    <string name="permission_rationale">faceopen device requires additional permissions to function. Please grant the required permissions to proceed.</string>
+
+
+    //Pref
+    <string name="camera_name">com.techolution.faceopen.Utils.camera_name</string>
+    <string name="lock_welcome_shown">com.techolution.faceopen.Utils.lock_welcome_shown</string>
+    <string name="user_permission">com.techolution.faceopen.Utils.user_permission</string>
+    <string name="system_ip">com.techolution.faceopen.Utils_system_ip</string>
+    <string name="ip_history">com.techolution.faceopen.Utils.ip_history</string>
+    <string name="camera_id">com.techolution.faceopen.Utils.camera_id</string>
+    <string name="debug_switch">com.techolution.faceopen.Utils.debug_switch</string>
+    <string name="speech_switch">com.techolution.faceopen.Utils.speech_switch</string>
+    <string name="actuator_switch">com.techolution.faceopen.Utils.actuator_switch</string>
+    <string name="pose_switch">com.techolution.faceopen.Utils.pose_switch</string>
+    <string name="logging_switch">com.techolution.faceopen.Utils.logging_switch</string>
+    <string name="spoof_switch">com.techolution.faceopen.Utils.spoof_switch</string>
+    <string name="door_id">com.techolution.faceopen.view.door_id</string>
+    <string name="createorganization">createOrganization</string>
+    <string name="addedgedevice">addEdgeDevice</string>
+    <string name="updateedgedevice">updateEdgeDevice</string>
+    <string name="organization_name">Organization Name</string>
+    <string name="organization_address">Organization Address</string>
+    <string name="device_name">Device Name</string>
+    <string name="organization_city">Organization City</string>
+    <string name="organization_country">Organization Country</string>
+    <string name="add_edge_device">Add Edge Device</string>
+    <string name="door_selection">Door Selection</string>
+    <string name="create_door">Create Door</string>
+    <string name="select_door">Select Door</string>
+    <string name="let_s_give_a_name">Let\'s give a name to this device</string>
+    <string name="select_a_door_or_create_a_new_door">Select a door or create a new door</string>
+    <string name="let_s_give_a_name_to_the_door">Let\'s give a name to the door</string>
+    <string name="door_name">Door Name</string>
+
+    <!-- Kiosk Mode strings -->
+
+    <string name="not_device_owner">App is not device admin set-device-admin from terminal and restart</string>
+    <string name="device_owner">App is device admin!</string>
+    <string name="already_updated">The app is already updated to latest version</string>
+    <string name="stop_lock_task">Stop App Pinning</string>
+    <string name="remove_owner_task">Remove Admin</string>
+    <string name="usb_permission">USB Permission</string>
+    <string name="start_lock_task">Start App Pinning</string>
+
+    <string name="check_location_permission">Check Location Permission</string>
+    <string name="check_storage_permission">Check Storage Permission</string>
+    <string name="check_wifi">Check Wifi</string>
+    <string name="check_bluetooth">Check Bluetooth</string>
+    <string name="check_usb_permission">Check USB Permission</string>
+
+    <string name="downloading">Downloading...</string>
+    <string name="title_file_download">APK is downloading</string>
+    <string name="storage_access_required">Storage access is required to downloading the file.</string>
+    <string name="storage_permission_denied">Storage permission request is denied.</string>
+    <string name="storage_permission_granted">Storage permission request is granted.</string>
+    <string name="wifi_enable">Wifi turned on</string>
+    <string name="wifi_disable">Wifi turned off</string>
+
+    <string name="bluetooth_enabling"> Bluetooth is Enabling</string>
+    <string name="bluetooth_enabled"> Bluetooth is Enabled</string>
+    <string name="location_permission_granted">Location Permission Granted</string>
+    <string name="location_permission_denied">Location Permission Denied</string>
+    <string name="admin_removed">Admin Removed, Please Press Home/Back button to close application</string>
+    <string name="version_code">version</string>
+
+    <string name="update_start">Update Installation Starting</string>
+    <string name="usb_perm_no_success">USB Permission check unsuccessful</string>
+    <string name="usb_perm_success">USB Permission check successful</string>
+    <string name="no_usb">No Attached USB Found</string>
+    <string name="app_lock">App is Pinned, No Back, Minimize operation is allowed</string>
+    <string name="app_no_lock">App is Un-Pinned, Press Back/Home to close app</string>
+    <string name="app_install">install_complete</string>
+    <string name="restart_phone">RESTART PHONE</string>
+
+
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+    <string name="opened">Opened</string>
+    <string name="closed">Closed</string>
+    <string name="forward">Forward</string>
+    <string name="backward">Backward</string>
+    <string name="push_to_enter">Push to Enter</string>
+    <string name="pull_to_enter">Pull to Enter</string>
+    <string name="close_door">Close Door</string>
+    <string name="yaw_crossed">Yaw Crossed</string>
+    <string name="door_direction">Door Open Direction</string>
+    <string name="Save">Save</string>
+    <string name="close_door_confirm">Door is in fully closed position</string>
+    <string name="press_amp_hold_the_forward_button_till_the_door_is_at_your_preferred_opened_position"><![CDATA[Use the \"Forward\" or \"Backward\" buttons below to drive the door to open position!]]></string>
+    <string name="once_the_door_is_at_your_preferred_position_please_click_the_button_below">Once the door is at your preferred position, please click the button below.</string>
+    <string name="calibrate_open_position">Calibrate Open Position</string>
+    <string name="press_amp_hold_the_backward_button_till_the_door_is_at_your_preferred_closed_position"><![CDATA[Use the \"Forward\" or \"Backward\" buttons below to drive the door to close position!]]></string>
+    <string name="calibrate_close_position">Calibrate Close Position</string>
+    <string name="calibrate_door_type">To begin the calibration process, please choose the type of the door.</string>
+    <string name="close_door_position">Please drive the door back to close position</string>
+    <string name="calibrate_confirm">Below are some technical info for the geeks, Please confirm and click on next</string>
+    <string name="e_g_conference_enter_etc">E.g. Conference, enter, etc…</string>
+    <string name="automatic_led">Automatic LED</string>
+
+    <string name="ado_disconnect">Obot disconnected\nPlease check if the Obot is proper and device is near.\nClose this page and try again.</string>
+    <string name="initializing_camera">Initializing Camera...</string>
+    <string name="e_g_conference_entry_conference_exit_etc">E.g. Conference entry,Conference exit , etc…</string>
+
+    <string name="text_yes">Yes</string>
+    <string name="text_no">No</string>
+    <string name="clockwise">Clockwise</string>
+    <string name="anti_clock">Anti-clockwise</string>
+    <string name="dir">dir</string>
+    <string name="yaw">yaw</string>
+    <string name="text_open">open</string>
+    <string name="text_close">close</string>
+    <string name="head_close">Close : </string>
+    <string name="head_open">Open : </string>
+    <string name="press_on_open_door_button_to_open_the_door_to_calibrated_position">Click on open door as many times as you like to test the set up.</string>
+    <string name="open_door">OPEN DOOR</string>
+    <string name="press_on_close_door_button_to_close_the_door_to_calibrated_position">Click on close door as many times as you like to test the set up.</string>
+    <string name="done">Done</string>
+    <string name="rescan">Rescan</string>
+    <string name="use_the_below_buttons_if_you_want_clamp_unclamp_the_doorbot_automatically">Use the below buttons if you want clamp/unclamp the Doorbot automatically.</string>
+    <string name="press_the_below_button_if_you_want_to_stop_the_automatic_clamping_process">Press the below button if you want to stop the automatic clamping process.</string>
+    <string name="stop_auto_clamping">Stop Auto Clamping</string>
+    <string name="select_the_below_option_if_you_want_to_clamp_the_doorbot_to_the_door_manually">Select the below option if you want to clamp the Doorbot to the door manually.</string>
+    <string name="horizontal_clamp_configuration">Horizontal Clamp Configuration</string>
+    <string name="click_on_next_once_the_clamping_process_is_completed">Click on \'Next\' once the clamping process is completed.</string>
+    <string name="back">Back</string>
+    <string name="check_to_ensure_door_is_in_your_desired_fully_close_position_then_click_next_below">Check to ensure door is in your desired fully Close position, then click next below</string>
+    <string name="record_position">Record Position</string>
+    <string name="start_intent">Start Intent</string>
+    <string name="stop_intent">Stop Intent</string>
+    <string name="clutch_engage">ACTIVE</string>
+    <string name="clutch_disengage">DEACTIVATE</string>
+    <string name="remove_adjust_doorbot_clamp">Remove / Adjust Doorbot Clamp</string>
+    <string name="reset_doorbot">Reset Doorbot</string>
+    <string name="re_calibrate">Re-calibrate</string>
+    <string name="cancel">Cancel</string>
+    <string name="please_enter_your_admin_pin">Please enter your admin PIN</string>
+    <string name="please_enter_your_door_pin">Please enter the door PIN</string>
+    <string name="entered_an_incorrect_pin_too_many_times">Entered an incorrect PIN too many times</string>
+    <string name="please_enter_your_valid_pin">Please enter valid door PIN</string>
+    <string name="coming_soon">Coming Soon</string>
+
+
+    <!-- ADO NEW UI -->
+    <string name="install_text">Includes the following steps:</string>
+    <string name="install_text_a">1) Door clamping\n2) Doorbot Calibration</string>
+    <string name="install_text_b">Doorbot clamp will be moved to initial position</string>
+    <string name="install_text_c">Already Installed? </string>
+    <string name="install_text_d"> <b>Skip</b> </string>
+    <string name="clamp_text_a">Slide the bot on the inside of the door, should\nbe placed under door handle.</string>
+    <string name="clamp_text_c">Click the button below once you place the bot</string>
+    <string name="auto_text">Relax, automatic bot fasten in progress...</string>
+    <string name="auto_untext">Relax, automatic bot un-fasten in progress...</string>
+    <string name="auto_text_a">Clamp jammed or extreme running, </string>
+    <string name="auto_text_c">Re-try</string>
+    <string name="auto_text_e">Click</string>
+    <string name="auto_text_b">Manual Clamping</string>
+    <string name="auto_text_d">if required.</string>
+    <string name="manual_text_ver">Vertical clamp is tight on the door. Proceed with caution!</string>
+    <string name="manual_text_hor">Horizontal clamp is tight on the door. Proceed with caution!</string>
+    <string name="calibration_head">Calibration includes following tasks:</string>
+    <string name="calibration_detail_a">Setting door close position</string>
+    <string name="calibration_detail_b">Setting door open position</string>
+    <string name="calibration_detail_c">Testing the calibration</string>
+    <string name="cal_close">Set door close position</string>
+    <string name="cal_hint">\"Click \&amp; hold the button to move the doorbot\"</string>
+    <string name="cal_open">Set door open position</string>
+    <string name="cal_success">Calibration successful</string>
+    <string name="test_text">You can now test the calibration by clicking\non the continue below.</string>
+    <string name="test_op_text_close">Please toggle to <b>close</b> the door</string>
+    <string name="test_op_text_open">Please toggle to <b>open</b> the door</string>
+    <string name="test_manual_test">Please move the door to close position.</string>
+
+    <string name="setup_success">Doorbot Setup is\nSuccessful!</string>
+    <string name="re_scan">Re-scan</string>
+    <string name="skip">Skip</string>
+    <string name="try_again"> <b><u>try again</u></b> </string>
+    <string name="re_calibrate1">Re-Calibrate</string>
+
+    <string name="place_bot">Place the bot</string>
+    <string name="auto_fasten">Auto Fasten</string>
+    <string name="auto_unFasten">Auto Un-Fasten</string>
+    <string name="cal">Calibration</string>
+    <string name="cal_done">Hurray! Calibration is Done</string>
+    <string name="v_unfasten">Vertical Un-fasten</string>
+    <string name="h_unfasten">Horizontal Un-fasten</string>
+    <string name="reset_ado">Reset ADO</string>
+    <string name="reset_text">This will clear the data of the ADO. Do you want to proceed?</string>
+    <string name="connect_error">Doorbot got disconnected, please try again</string>
+    <string name="progress_unfasten">Relax, automatic bot un-fasten in progress</string>
+    <string name="progress_fasten">Relax, automatic bot fasten in progress</string>
+    <string name="connect">Connecting</string>
+    <string name="search">Searching</string>
+    <string name="con_error">Connection timeout</string>
+    <string name="ins_start">Starting Installation</string>
+    <string name="bond_failed">Bonding Failed</string>
+    <string name="save_data">Saving Installation Data</string>
+    <string name="testing">Testing</string>
+    <string name="install_battery_msg">Please install the battery, power ON the \n doorbot and click continue</string>
+    <string name="secondtext_clconnect">doorbot and click continue</string>
+    <string name="thanks_text">Thanks for choosing the dooropen.</string>
+    <string name="Continue">Continue</string>
+    <string name="set">Set</string>
+    <string name="Re_scan">Re-scan</string>
+    <string name="connect_device">Connect your device</string>
+    <string name="select_device"> Select your device </string>
+    <string name="device_address">Device Address</string>
+    <string name="pairing_failed">Pairing failed, Please </string>
+    <string name="installation_process">Installation Process</string>
+    <string name="place_the_bot">Place the bot</string>
+    <string name="start_auto_fasten">Start Auto Fasten</string>
+    <string name="vertical_fastening">Vertical fastening</string>
+    <string name="horizontal_fastening">Horizontal fastening</string>
+    <string name="pb_running">Saving Installation</string>
+    <string name="manual_verti_fast">Manual Vertical Fastening</string>
+    <string name="up">Up</string>
+    <string name="down">Down</string>
+    <string name="manual_hor_fast">Manual Horizontal Fastening</string>
+    <string name="in">In</string>
+    <string name="out">Out</string>
+    <string name="calibration">Calibration</string>
+    <string name="intent_switch">Intent Switch</string>
+
+    <string name="ado_reset_option_a"><font size="25"><b>The Doorbot needs to reset.</b></font></string>
+    <string name="ado_reset_option_c"><font size="25"><b>Is the door at close position ?</b></font></string>
+    <string name="ado_reset_option_b"><b>Automatic</b> :: The Door will move to close position automatically. \n\n <b>Manual</b> :: Please move the door to close position manually.\n </string>
+    <string name="not_what_you_are_looking_for">Not what you are looking for?</string>
+    <string name="open_close_operation">Open / Close Operation</string>
+    <string name="clutch_operation">Clutch Operation</string>
+    <string name="clutch_operation_disable">Please Activate clutch</string>
+    <string name="openClose_operation_disable">Please Install &amp; Calibrate Doorbot</string>
+
+    <string name="remove_reset_doorbot">Install / Uninstall Doorbot</string>
+    <string name="install">Install</string>
+    <string name="uninstall">Un-Install</string>
+    <string name="reset">Reset</string>
+    <string name="configuration">Configuration</string>
+    <string name="manual_clutch_text"><u>manual clutch</u></string>
+    <string name="activated">Activated</string>
+    <string name="deactivated">Deactivated</string>
+    <string name="reset_calibration">Reset Calibration</string>
+    <string name="clutch_switch">Clutch Switch</string>
+    <string name="stop">Stop</string>
 </resources>
